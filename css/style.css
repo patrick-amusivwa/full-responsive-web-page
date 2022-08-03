@@ -33,6 +33,9 @@ input,button,textarea{
     --FONT-COLOR:black;
     --BORDER-COLOR:#333;
     --HIGHLIGHT-COLOR:rgb(51,178,51);
+    --LINK-COLOR:black;
+    --LINK-HOVER:hsla(0,0%,0%,0.6);
+    --LINK-ACTIVE:var(--BGCOLOR);    
 
 
     /* ||BORDERS */
@@ -81,4 +84,15 @@ h2,h3{
 }
 p{
     line-height:1.5;
+}
+a:any-link{
+    color:var(--LINK-COLOR);
+
+}
+a:hover,a:focus-visible{
+    color:var(--LINK-HOVER);
+
+}
+a:active{
+    color:var(--LINK-ACTIVE);
 }
