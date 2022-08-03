@@ -141,7 +141,7 @@ a:active{
 
 }
 /* |HERO */
-.hero{
+.hero {
     position:relative;
 
 }
@@ -152,13 +152,14 @@ a:active{
     letter-spacing:0.1em ;
     text-shadow:2px 2px 5px var(--BORDER-COLOR);
     position: absolute;
-    left:20px;
     top:-100px;
-    animation-name:welcome;
+    left:26px;
+    /* animation-name:welcome;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;  */
+    animation:welcome 0.5s ease-in-out 1s forwards;
 
     
 }
@@ -167,10 +168,12 @@ a:active{
     top:-20px;
     transform:skew(0deg,-5deg) scaleY(0);
    } 
-    80%{
+
+   80%{
         top:30px;
         transform:skew(10deg,-5deg) scaleY(1.2);
     }
+    
     100%{
         top:20px;
         transform:skew(-10deg,-5deg) scaleY(1);
