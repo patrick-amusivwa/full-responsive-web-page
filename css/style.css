@@ -119,6 +119,14 @@ a:active{
     text-align:center;
     background-color:var(--HEADER-BG-COLOR);
     color:var(--HEADER-COLOR);
+    padding:var(--PADDING-TB) var(--PADDING-SIDE);
 
+
+}
+.header__nav{
+    background-color: var(--NAV-BG-COLOR);
+    border-bottom:var(--BORDERS);
+    font-weight:bold;
+    box-shadow:0 6px 5px -5px var(--BORDER-COLOR);
 
 }
