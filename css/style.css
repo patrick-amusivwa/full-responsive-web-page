@@ -307,27 +307,27 @@ tr {
   box-shadow: 1px 1px 3px var(--BORDER-COLOR);
 }
 .menu__item:hover {
-  animation: shake 0.5s ease-in-out 0.1s forwards;
+  animation: shake 5s ease-in-out 0.1s forwards;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
 @keyframes shake {
   0% {
-    transform: translateX(0);
+    transform: perspective(1px) rotateX(0deg) rotateY(0deg);
   }
   20% {
-    transform: translateX(10px);
+    transform: perspective(100px) rotateX(-10deg) rotateY(10deg);
   }
   40% {
-    transform: translateX(-10px);
+    transform: perspective(100px) rotateX(10deg) rotateY(-10deg);
   }
   60% {
-    transform: translateX(10px);
+    transform: perspective(100px) rotateX(-10deg) rotateY(10deg);
   }
   80% {
-    transform: translateX(-10px);
+    transform: perspective(100px) rotateX(10deg) rotateY(-10deg);
   }
   100% {
-    transform: translateX(0);
+    transform: perspective(1px) rotateX(0deg) rotateY(0deg);
   }
 }
